@@ -28,13 +28,6 @@ public class Ingest {
 					curROI = new ROI(Integer.parseInt(s[0]));
 				}
 				
-//				Exposures.add(new Exposure(
-//						Integer.parseInt(s[0]),
-//						Float.parseFloat(s[1]),
-//						Float.parseFloat(s[2]),
-//						Float.parseFloat(s[3]),
-//						Float.parseFloat(s[4])));
-				
 				if (curROI.ROINumber == Integer.parseInt(s[0])){
 					curROI.addIntensity(Float.parseFloat(s[2]));
 					curROI.addTime(Float.parseFloat(s[1]));
